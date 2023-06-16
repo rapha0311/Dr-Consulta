@@ -4,7 +4,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: #1f5a5c;
+    background-color: #e2e9e9;
 }
 
 .logo {
@@ -26,7 +26,7 @@ nav ul {
 
 nav ul a {
     list-style: none;
-    color: #fff;
+    color: #6e6c6c;
     position: relative;
 }
 

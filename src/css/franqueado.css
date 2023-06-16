@@ -19,7 +19,7 @@
 }
 
 body {
-    background-color: rgb(82, 139, 119);
+    background-color: var(--color-light-50);
 }
 
 
@@ -42,6 +42,7 @@ body {
     gap: 30px;
     box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.336);
     height: fit-content;
+    animation: dark-to-light 0.3s ease-in-out;
 }
 
 #form_header {
@@ -59,7 +60,7 @@ body {
 #form_header h1::before {
     position: absolute;
     content: '';
-    width: 100%;
+    width: 70%;
     background-color: var(--color-purple-50);
     height: 3px;
     bottom: 5px;
@@ -136,9 +137,6 @@ body {
 }
 
 .container_invista {
-    background: url(../images/fundo-franqueado.png);
-    background-position: center;
-    background-size: cover;
     display: flex;
     position: relative;
     width: 100%;
@@ -148,19 +146,209 @@ body {
     flex-direction: column;
 }
 
+.container_invista .bg {
+    background: url(../images/Logo.jpeg);
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.2;
+    background-color: #fff;
+}
+
+.container_invista .span1 {
+    background-color: transparent;
+    font-size: 25px;
+    height: 8%;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: -30%;
+}
+
+.container_invista .span2 {
+    background: linear-gradient(15deg, #02999e, #53c1c5, #466d70);
+    margin-left: -30%;
+    height: 8%;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    margin-top: 2%;
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 10px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    transition: 0.2s;
+}
+
+.container_invista .span2:hover {
+    transform: scale(1.05);
+}
+
+
+
 .container_invista h2 {
     font-size: 45px;
-    margin-left: -25%;
+    margin-left: -30%;
     text-transform: uppercase;
     font-weight: bold;
-    color: #04616d;
+    color: #1d240b;
+    text-shadow: 0 0 0.2em #04616d;
 }
 
 .container_invista p {
     width: 60%;
-    margin-left: -25%;
+    margin-left: -30%;
     text-align: center;
-    color: #121314;
+    color: var(--color-dark-100);
     font-weight: bold;
     font-size: 22px;
+}
+
+.dark#form_requisicao {
+    color: var(--color-light-50);
+    background-color: var(--color-dark-100);
+    animation: light-to-dark 0.3s ease-in-out;
+}
+
+.dark#form_requisicao .input-field input,
+.dark#form_requisicao .input-field i {
+    color: var(--color-light-50);
+}
+
+@keyframes dark-to-light {
+    0% {
+        background-color: var(--color-dark-100);
+    }
+
+    100% {
+        background-color: var(--color-light-50);
+    }
+}
+
+@keyframes light-to-dark {
+    0% {
+        background-color: var(--color-light-50);
+    }
+
+    100% {
+        background-color: var(--color-dark-100);
+    }
+}
+
+.container_vantagens {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.bg_vantagens {
+    background: linear-gradient(90deg, #02999e, #53c1c5, #466d70);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    z-index: -1;
+
+}
+
+.container_vantagens .titulo_vantagens {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: -20%;
+    margin-top: -15%;
+}
+
+.container_vantagens .titulo_vantagens h2 {
+    margin-top: -65%;
+    font-size: 65px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #1d240b;
+    text-shadow: 0 0 0.2em #04616d;
+}
+
+.container_vantagens .titulo_vantagens p {
+    font-weight: bold;
+    color: var(--color-light-50);
+    font-size: 28px;
+    margin-top: -4%;
+    margin-bottom: -15%;
+}
+
+.container_vantagens .cards_vantagens {
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    height: 80%;
+    margin-left: -28%;
+    margin-bottom: -30%;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+}
+
+.container_vantagens .cards_vantagens .card {
+    background: linear-gradient(30deg, #02999e, #53c1c5, #466d70);
+    width: 36%;
+    height: 45%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #04616d;
+    border-radius: 8px;
+}
+
+
+.container_vantagens .cards_vantagens .card::before {
+    content: '';
+    position: absolute;
+    top: -1%;
+    left: -1%;
+    right: -1%;
+    bottom: -1%;
+    background: var(--color-light-50);
+    z-index: -1;
+    transform: skew(2deg, 2deg);
+}
+
+.cards_vantagens .card .conteudo {
+    position: relative;
+    padding: 20px;
+    text-align: center;
+}
+
+.conteudo h2 {
+    position: absolute;
+    top: -5%;
+    right: 2%;
+    margin: 0;
+    padding: 0;
+    font-size: 10em;
+    color: rgba(255, 255, 255, 0.03);
+    transition: 0.5s;
+}
+
+.card:hover .conteudo h2 {
+    top: -130px;
+}
+
+.card .conteudo p {
+    margin: 0 0 10px;
+    padding: 0;
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--color-light-50);
 }
