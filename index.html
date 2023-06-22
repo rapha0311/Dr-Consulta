@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cuidar Homecare e Curativos</title>
+    <title>Dr. Consulta</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,16 +16,55 @@
     <link rel="stylesheet" href="./src/css/header.css">
     <link rel="stylesheet" href="./src/css/slider.css">
     <link rel="stylesheet" href="./src/css/servicos.css">
+    <link rel="stylesheet" href="./src/css/all.css">
+    <script src="./src/js/all.js" defer></script>
+    <script src="./src/js/dropdown.js" defer></script>
 
 </head>
 
 <body>
-    <header class="header">
+    <header id="top" class="header">
         <div class="logo">
-            <img src="./src/images/Logo.jpeg" alt="logo dr. consulta">
+            <img src="./src/images/Logo.png" alt="logo dr. consulta">
         </div>
 
-        <nav>
+        <nav class="navbar">
+            <ul class="navbar_menu">
+                <li class="navbar_item"><a href="#">Sobre a empresa</a></li>
+                <li class="navbar_item"><a href="#">Convênios e Parcerias</a></li>
+                <li class="navbar_item"><a href="#" class="dropdown">Consultas e Procedimentos</a>
+                    <div class="submenu">
+                        <div class="submenu_itens">
+                            <div class="submenu_item">
+                                <p><i class="fa-solid fa-stethoscope"></i></p>
+                                <h4>Consultas</h4>
+                            </div>
+                            <div class="submenu_item">
+                                <p><i class="fa-solid fa-tooth"></i></p>
+                                <h4>Odontologia</h4>
+                            </div>
+                            <div class="submenu_item">
+                                <p><i class="fa-solid fa-flask-vial"></i></p>
+                                <h4>Exames</h4>
+                            </div>
+                            <div class="submenu_item">
+                                <p><i class="fa-solid fa-bed-pulse"></i></p>
+                                <h4>Cirurgias</h4>
+                            </div>
+                            <div class="submenu_item">
+                                <p><i class="fa-solid fa-spa"></i></p>
+                                <h4>Estética</h4>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="navbar_item"><a href="#">Unidades</a></li>
+                <li class="navbar_item"><a href="franqueado.html">Seja um Franqueado</a></li>
+                <li class="navbar_item"><a href="#">Contatos</a></li>
+            </ul>
+        </nav>
+
+        <!-- <nav>
             <ul>
                 <a href="#sobre">
                     <li>Sobre a empresa</li>
@@ -48,65 +87,33 @@
 
                 </a>
             </ul>
-        </nav>
+        </nav> -->
 
     </header>
-    <div class="imagens-slider" id="#home">
-        <a href="#" id="seta-voltar" class="seta-voltar opacidade">
-            <img class="imagem-seta" src="./src/images/seta direita.png" alt="seta voltar">
+    <div class="container_slider">
+        <a class="btn_fixed" href="#top">
+            <img src="./src/images/seta cima.png">
         </a>
-        <div class="slide slide1 mostrar">
-            <div class="conteudo">
-                <h1 class="titulo">Título imagem 1</h1>
-                <p class="texto">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam provident
-                    consequuntur nemo, fuga, est iure molestias in quae tempore impedit dolore hic, praesentium
-                    cupiditate sit cum officiis? Porro, distinctio quidem?</p>
-                <a href="#" class="botao vermelho">Saiba mais</a>
+        <div class="imagens-slider">
+            <input type="radio" name="slider" id="item-1" checked>
+            <input type="radio" name="slider" id="item-2">
+            <input type="radio" name="slider" id="item-3">
+            <input type="radio" name="slider" id="item-4">
+            <div class="imagens">
+                <label class="imagem" for="item-1" id="imagem-1">
+                    <img src="./src/images/1.jpg" alt="">
+                </label>
+                <label class="imagem" for="item-2" id="imagem-2">
+                    <img src="./src/images/2.jpg" alt="">
+                </label>
+                <label class="imagem" for="item-3" id="imagem-3">
+                    <img src="./src/images/3.jpg" alt="">
+                </label>
             </div>
         </div>
-        <div class="slide slide2">
-            <div class="conteudo">
-                <h1 class="titulo">Título imagem 2</h1>
-                <p class="texto">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam provident
-                    consequuntur nemo, fuga, est iure molestias in quae tempore impedit dolore hic, praesentium
-                    cupiditate sit cum officiis? Porro, distinctio quidem?</p>
-                <a href="#" class="botao amarelo">Saiba mais</a>
-            </div>
-        </div>
-        <div class="slide slide3">
-            <div class="conteudo">
-                <h1 class="titulo">Título imagem 3</h1>
-                <p class="texto">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam provident
-                    consequuntur nemo, fuga, est iure molestias in quae tempore impedit dolore hic, praesentium
-                    cupiditate sit cum officiis? Porro, distinctio quidem?</p>
-                <a href="#" class="botao marrom">Saiba mais</a>
-            </div>
-        </div>
-        <div class="slide slide4">
-            <div class="conteudo">
-                <h1 class="titulo">Título imagem 4</h1>
-                <p class="texto">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam provident
-                    consequuntur nemo, fuga, est iure molestias in quae tempore impedit dolore hic, praesentium
-                    cupiditate sit cum officiis? Porro, distinctio quidem?</p>
-                <a href="#" class="botao azul">Saiba mais</a>
-            </div>
-        </div>
-        <div class="slide slide5">
-            <div class="conteudo">
-                <h1 class="titulo">Título imagem 5</h1>
-                <p class="texto">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam provident
-                    consequuntur nemo, fuga, est iure molestias in quae tempore impedit dolore hic, praesentium
-                    cupiditate sit cum officiis? Porro, distinctio quidem?</p>
-                <a href="#" class="botao branco">Saiba mais</a>
-            </div>
-        </div>
-        <a href="#" id="seta-avancar" class="seta-avancar">
-            <img class="imagem-seta" src="./src/images/seta direita.png" alt="seta-avancar">
-        </a>
-
     </div>
 
-    <section class="servicos" id="#consultas-servicos">
+    <!-- <section class="servicos" id="#consultas-servicos">
         <div class="container_servicos">
             <h1 class="titulo_servicos">
                 NOSSOS SERVIÇOS
@@ -134,9 +141,9 @@
             </div>
         </div>
 
-    </section>
+    </section> -->
 
-    <section class="convenios" id="convenios_parciars">
+    <!-- <section class="convenios" id="convenios_parciars">
         <div class="container_convenios">
             <h1>Convênios e Parcerias</h1>
         </div>
@@ -151,8 +158,9 @@
             glare: true,
             "max-glare": 1,
         });
-    </script>
-    
+    </script> -->
+    <script src="./src/js/botao.js"></script>
+
 </body>
 
 </html>

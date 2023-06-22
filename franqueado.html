@@ -10,10 +10,17 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./src/css/reset.css">
     <link rel="stylesheet" href="./src/css/franqueado.css">
+    <link rel="stylesheet" href="./src/css/card_flip.css">
+    <link rel="stylesheet" href="./src/css/card_video.css">
+    <link rel="stylesheet" href="./src/css/sobre.css">
+    <link rel="stylesheet" href="./src/css/linha_magica.css">
 </head>
 
 <body>
     <main id="container">
+        <a class="btn_fixed" href="#top">
+            <img src="./src/images/seta cima.png">
+        </a>
         <form id="form_requisicao">
             <div id="form_header">
                 <div class="titulo">
@@ -54,11 +61,11 @@
                     </label>
                 </div>
                 <div class="input-box">
-                    <label for="investimento">
-                        Capital de investimento
+                    <label for="objetivos">
+                        Qual o objetivo com a franquia?
                         <div class="input-field">
-                            <i class="fa-solid fa-brazilian-real-sign"></i>
-                            <input type="text" id="investimento" name="investimento">
+                            <i class="fa-solid fa-bullseye"></i>
+                            <input type="text" id="objetivos" name="objetivos">
                         </div>
                     </label>
                 </div>
@@ -67,7 +74,7 @@
                 Receber uma apresentação
             </button>
         </form>
-        <div class="container_invista">
+        <div class="container_invista" id="top">
             <div class="bg"></div>
             <h2>Investimento seguro e duradouro</h2>
             <span class="span1"> O segmento que representa 75% da população do Brasil.</span>
@@ -84,24 +91,28 @@
             </div>
             <div class="cards_vantagens">
                 <div class="card">
+                    <div class="imagem_negocio"></div>
                     <div class="conteudo">
                         <h2>01</h2>
                         <p>Plano de negócios estruturado</p>
                     </div>
                 </div>
                 <div class="card">
+                    <div class="imagem_consultores"></div>
                     <div class="conteudo">
                         <h2>02</h2>
-                        <p>Acompanhamento de consultores experientes no segmento</p>
+                        <p>Consultores experientes no segmento</p>
                     </div>
                 </div>
                 <div class="card">
+                    <div class="imagem_etapas"></div>
                     <div class="conteudo">
                         <h2>03</h2>
                         <p>Acompanhamento em todas as etapas do negócio</p>
                     </div>
                 </div>
                 <div class="card">
+                    <div class="imagem_payback"></div>
                     <div class="conteudo">
                         <h2>04</h2>
                         <p>Payback de 24 meses</p>
@@ -110,18 +121,215 @@
             </div>
         </div>
         <div class="container_negocio">
+            <div class="bg_vantagens"></div>
             <div class="msg">
                 <h1>Negócio diferenciado</h1>
             </div>
-            <div class="card_efeito">
-                <div class="conteudo_efeito">
-                    <h2>04</h2>
-                    <p>Payback de 24 meses</p>
+            <div class="cards_efeito">
+                <div class="card_efeito">
+                    <div class="imagem_medicina"></div>
+                    <div class="conteudo_efeito">
+                        <h2>Medicina</h2>
+                    </div>
+                </div>
+                <div class="card_efeito">
+                    <div class="imagem_estetica"></div>
+                    <div class="conteudo_efeito">
+                        <h2>Estética</h2>
+                    </div>
+                </div>
+                <div class="card_efeito">
+                    <div class="imagem_odontologia"></div>
+                    <div class="conteudo_efeito">
+                        <h2>Odontologia</h2>
+                    </div>
+                </div>
+                <div class="card_efeito">
+                    <div class="imagem_exames"></div>
+                    <div class="conteudo_efeito">
+                        <h2>Exames e Procedimentos</h2>
+                    </div>
                 </div>
             </div>
         </div>
+        <div class="container_modelos">
+            <div class="bg_modelos"></div>
+            <div class="msg_modelos">
+                <h1>MODELOS</h1>
+                <h2>DE FRANQUIA</h2>
+                <span>Modelos de acordo com capacidade do negócio</span>
+                <P>Antes da abertura do negócio é avaliado potencial, capacidade de crescimento e de investimentos para
+                    ajustar o modelo da franquia à realidade do Franqueado.</P>
+            </div>
+            <div class="imagens_modelos">
+                <div class="bg_imagens_modelos"></div>
+                <div class="modelos">
+                    <img src="./src/images/modelo1.jpg" alt="Imagem de modelo 1">
+                    <p>Lorem ipsum dolor sit</p>
+                </div>
+                <div class="modelos">
+                    <img src="./src/images/modelo2.jpg" alt="Imagem de modelo 2">
+                    <p>Lorem ipsum dolor sit</p>
+                </div>
+                <div class="modelos">
+                    <img src="./src/images/modelo3.jpg" alt="Imagem de modelo 3">
+                    <p>Lorem ipsum dolor sit</p>
+                </div>
+            </div>
+        </div>
+        <div class="container_cartao">
+            <div class="bg_cartao"></div>
+            <div class="msg_cartao">
+                <h2>Um cartão para cada cliente e um modelo de captação, desenvolvimento e vendas totalmente inovador,
+                    feito para você!</h2>
+            </div>
+            <div class="container_fliper">
+                <div class="cards_fliper">
+                    <div class="card_fliper">
+                        <div class="card_frente">
+                            <h2>Cartão + Saúde</h2>
+                            <h3>Cartão R$29,90</h3>
+                        </div>
+                        <div class="card_costas">
+                            <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente maiores voluptates
+                                doloremque commodi a ratione totam exercitationem optio odit temporibus qui laborum
+                                obcaecati dolor, nihil esse dolorum incidunt. Aspernatur, eligendi!</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards_fliper">
+                    <div class="card_fliper">
+                        <div class="card_frente">
+                            <h2>Cartão + Saúde e Assistencial</h2>
+                            <h3>Cartão R$69,00</h3>
+                        </div>
+                        <div class="card_costas">
+                            <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente maiores voluptates
+                                doloremque commodi a ratione totam exercitationem optio odit temporibus qui laborum
+                                obcaecati dolor, nihil esse dolorum incidunt. Aspernatur, eligendi!</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards_fliper">
+                    <div class="card_fliper">
+                        <div class="card_frente">
+                            <h2>Cartão + Assistência</h2>
+                            <h3>Cartão R$29,90</h3>
+                        </div>
+                        <div class="card_costas">
+                            <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente maiores voluptates
+                                doloremque commodi a ratione totam exercitationem optio odit temporibus qui laborum
+                                obcaecati dolor, nihil esse dolorum incidunt. Aspernatur, eligendi!</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards_fliper">
+                    <div class="card_fliper">
+                        <div class="card_frente">
+                            <h2>Cartão + Empresas</h2>
+                            <h3>Cartão R$9,90</h3>
+                        </div>
+                        <div class="card_costas">
+                            <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente maiores voluptates
+                                doloremque commodi a ratione totam exercitationem optio odit temporibus qui laborum
+                                obcaecati dolor, nihil esse dolorum incidunt. Aspernatur, eligendi!</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="seja_franqueado">
+            <div class="bg_seja_franqueado"></div>
+            <h1>SEJA FRANQUEADO</h1>
+            <a href="#">Saiba mais</a>
+        </div>
+        <div class="container_suporte">
+            <div class="bg_suporte"></div>
+            <div class="titulo_suporte">
+                <h1>SUPORTE</h1>
+                <h2>ao franqueado</h2>
+            </div>
+            <div class="cards_suporte">
+                <div class="card">
+                    <div class="icone"><img src="./src/images/icone-universidade.png"></div>
+                    <h2>UNIVERSIDADE CORPORATIVA</h2>
+                    <H3>Na escolha e seleção do seu ponto comercial</H3>
+                </div>
+                <div class="card">
+                    <div class="icone"><img src="./src/images/icone-bi.png"></div>
+                    <h2>BI</h2>
+                    <H3>Todos os principais indicadores em um único local</H3>
+                </div>
+                <div class="card">
+                    <div class="icone"><img src="./src/images/icone-suporte-rede.png"></div>
+                    <h2>SUPORTE DE REDE</h2>
+                    <H3>Suporte na contratação dos profissionais médicos e odontológicos</H3>
+                </div>
+                <div class="card">
+                    <div class="icone"><img src="./src/images/icone-financeiro.png"></div>
+                    <h2>SUPORTE FINANCEIRO</h2>
+                    <H3>Acompanhamento do seu plano de negócios para obtenção de maior faturamento</H3>
+                </div>
+                <div class="card">
+                    <div class="icone"><img src="./src/images/icone-assessoria.png"></div>
+                    <h2>ASSESSORIA COMPLETA</h2>
+                    <H3>Na escolha e seleção do seu ponto comercial</H3>
+                </div>
+                <div class="card">
+                    <div class="icone"><img src="./src/images/icone-treinamento.png"></div>
+                    <h2>TREINAMENTO</h2>
+                    <H3>Operacional, comercial e de gestão para o franqueado e toda a sua equipe</H3>
+                </div>
+                <div class="card">
+                    <div class="icone"><img src="./src/images/icone-arquiteto.png"></div>
+                    <h2>MANUAL ARQUITETÔNICO</h2>
+                    <H3>Todo layout detalhado Aprovação da vigilância sanitária</H3>
+                </div>
+                <div class="card">
+                    <div class="icone"><img src="./src/images/icone-manual.png"></div>
+                    <h2>MANUAL</br>(PASSO A PASSO)</h2>
+                    <H3>Manuais com todas as rotinas de operação da franquia</H3>
+                </div>
+                <div class="card">
+                    <div class="icone"><img src="./src/images/icone-marketing.png"></div>
+                    <h2>MARKETING</h2>
+                    <H3>Assessoria completa de marketing on e off</H3>
+                </div>
+                <div class="card">
+                    <div class="icone"><img src="./src/images/icone-software.png"></div>
+                    <h2>SOFTWARE DE GESTÃO</h2>
+                    <H3>Software completo com relatórios e informações em tempo real</H3>
+                </div>
+            </div>
+        </div>
+        <div class="container_video">
+            <div class="bg_video"></div>
+            <div class="titulo_video">
+                <div class="bg_titulo"></div>
+                <span class="titulo_magico">DEPOIMENTOS</span>
+                <h2>Conheça nossos <span class="texto_magico">franqueados</span></h2>
+            </div>
+            <div class="card_video">
+                <video src="" controls></video>
+                <video src="" controls></video>
+            </div>
+        </div>
+        <div class="sobre">
+            <div class="texto">
+                <p>Conheça a</p>
+                <p><span class="palavra escura">Doutorconsultas.</span>
+                    <span class="palavra clara">Exames.</span>
+                </p>
+            </div>
+            <img src="./src/images/Logo.png" alt="Logo Drconsultas e exames">
+        </div>
+        <div class="institucional">
+            <video src="" controls></video>
+        </div>
     </main>
     <script src="./src/js/dark-light.js"></script>
+    <script src="./src/js/texto-sobre.js"></script>
+    <script src="./src/js/botao.js"></script>
 </body>
 
 </html>
