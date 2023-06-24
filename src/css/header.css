@@ -1,14 +1,105 @@
 .header {
-    height: 130px;
+    height: 8rem;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 1rem;
     background-color: #e2e9e9;
     border-bottom: 1px solid #eee;
 }
 
+.label-menu,
+.checkbox {
+    display: none;
+}
 
+@media (max-width: 1000px) {
+    .navbar .navbar_menu {
+        display: block;
+        position: absolute;
+        top: 5.6875rem;
+        left: 58%;
+        text-align: left;
+        width: 35%;
+        background-color: #e2e9e9;
+        height: 0;
+        z-index: 1;
+        visibility: hidden;
+        overflow-y: hidden;
+        transition: 0.5s;
+        gap: 0.7rem;
+    }
+
+    .navbar .navbar_menu a {
+        padding: 1rem 0;
+        margin-inline: 1rem;
+    }
+
+    .label-menu {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        color: var(--color-light-50);
+        padding-block: 1rem;
+        cursor: pointer;
+    }
+
+    .hamburguer {
+        border-top: 0.125rem solid;
+        width: 1.25rem;
+    }
+
+    .hamburguer::before,
+    .hamburguer::after {
+        content: '';
+        display: block;
+        width: 1.25rem;
+        height: 0.125rem;
+        background: currentColor;
+        margin-top: 0.3125rem;
+        position: relative;
+        transition: 0.3s;
+    }
+
+    .checkbox:checked~.navbar_menu {
+        height: calc(90vh - 5.6875rem);
+        visibility: visible;
+        overflow-y: auto;
+    }
+
+    .checkbox:checked~.label-menu .hamburguer {
+        border-top-color: transparent;
+    }
+
+    .checkbox:checked~.label-menu .hamburguer::before {
+        transform: rotate(135deg);
+    }
+
+    .checkbox:checked~.label-menu .hamburguer::after {
+        transform: rotate(-135deg);
+        top: -0.4375rem;
+    }
+
+    .submenu {
+        position: absolute;
+        z-index: 100;
+        margin-left: 7%;
+        margin-top: 68%;
+        overflow: visible;
+    }
+
+    .submenu_item {
+        width: 100%;
+        z-index: 10;
+    }
+
+    .submenu_itens {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
 
 .logo {
     height: 65px;
@@ -31,7 +122,7 @@
     list-style: none;
     display: flex;
     width: 1100px;
-    gap: 5px;
+    gap: 0.4rem;
     margin-left: 8%;
 }
 
@@ -43,7 +134,8 @@
 .navbar_item a {
     text-decoration: none;
     color: #6e6c6c;
-    font-size: 15px;
+    font-size: 0.9rem;
+
 }
 
 .submenu {
@@ -123,5 +215,3 @@ a:hover:before {
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
 }
-
-
