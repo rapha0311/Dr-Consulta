@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -14,13 +14,18 @@
     <link rel="stylesheet" href="./src/css/card_video.css">
     <link rel="stylesheet" href="./src/css/sobre.css">
     <link rel="stylesheet" href="./src/css/linha_magica.css">
+    <link rel="stylesheet" href="./src/css/responsive-franqueado.css">
 </head>
 
 <body>
     <main id="container">
-        <a class="btn_fixed" href="#top">
-            <img src="./src/images/seta cima.png">
-        </a>
+        <div data-scroll="suave" data-anima="scroll">
+            <a href="#topo">
+                <div class="topo">
+                    <img src="./src/images/seta cima.png" alt="voltar ao topo">
+                </div>
+            </a>
+        </div>
         <form id="form_requisicao">
             <div id="form_header">
                 <div class="titulo">
@@ -74,7 +79,7 @@
                 Receber uma apresentação
             </button>
         </form>
-        <div class="container_invista" id="top">
+        <div class="container_invista" id="topo">
             <div class="bg"></div>
             <h2>Investimento seguro e duradouro</h2>
             <span class="span1"> O segmento que representa 75% da população do Brasil.</span>
@@ -330,6 +335,7 @@
     <script src="./src/js/dark-light.js"></script>
     <script src="./src/js/texto-sobre.js"></script>
     <script src="./src/js/botao.js"></script>
+    <script src="./src/js/scroll-suave.js"></script>
 </body>
 
 </html>
