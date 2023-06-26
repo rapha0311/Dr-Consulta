@@ -1,0 +1,178 @@
+@media screen and (min-width: 200px) and (max-width:600px) {
+
+    body {
+        width: 100vw;
+    }
+
+    #form_requisicao {
+        width: 28%;
+        height: 40%;
+        margin-left: 45%;
+        padding: 0;
+        gap: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+    }
+
+    #form_header {
+        display: flex;
+        justify-content: space-between;
+        height: 8%;
+        width: 70%;
+        padding: 5px;
+        margin-bottom: 3%;
+    }
+
+    #form_header .titulo {
+        width: 100%;
+        height: 90%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: -3%;
+
+    }
+
+    #form_header .titulo h1::before {
+        background-color: #fff;
+        height: 1px;
+        bottom: 1px;
+        position: relative;
+    }
+
+    #form_header .titulo h1,
+    #form_header .titulo h2 {
+        font-size: 10px;
+    }
+
+    .input_field {
+        width: 60px;
+    }
+
+    #receber_apresentacao {
+        height: 10%;
+        font-size: 10px;
+        width: 70%;
+    }
+
+    .container_invista {
+        width: 100vw;
+        height: 90vh;
+    }
+
+    .container_invista h2 {
+        font-size: 18px;
+        margin-top: -20%;
+        width: 49%;
+        text-align: center;
+        margin-bottom: 3%;
+    }
+
+    .container_invista .span1 {
+        font-size: 20px;
+        margin-bottom: 1%;
+        text-align: center;
+    }
+
+    .container_invista p {
+        font-size: 15px;
+        text-align: center;
+        margin-bottom: 3%;
+        width: 49%;
+    }
+
+    .container_invista .span2 {
+        font-size: 15px;
+        width: 48%;
+        padding: 3%;
+        text-align: center;
+    }
+
+    .container_vantagens {
+        width: 100%;
+        height: 90vh;
+    }
+
+
+    .container_vantagens .titulo_vantagens h2 {
+        font-size: 40px;
+        margin-top: -100%;
+    }
+
+    .container_vantagens .cards_vantagens {
+        width: 45%;
+        height: 45%;
+    }
+
+    .container_vantagens .cards_vantagens .card {
+        width: 45%;
+        height: 50%;
+        margin-bottom: 1%;
+    }
+
+    .container_vantagens .cards_vantagens .card .imagem_negocio {
+        width: 80%;
+        height: 80%;
+    }
+
+    .container_vantagens .cards_vantagens .card .imagem_consultores {
+        width: 80%;
+        height: 80%;
+    }
+
+    .container_vantagens .cards_vantagens .card .imagem_etapas {
+        width: 80%;
+        height: 80%;
+    }
+
+    .container_vantagens .cards_vantagens .card .imagem_payback {
+        width: 80%;
+        height: 80%;
+    }
+
+    .card .conteudo p {
+        font-size: 12px;
+        height: 80%;
+    }
+
+    .container_negocio .msg h1 {
+        margin-top: -100%;
+        font-size: 20px;
+    }
+
+    .container_negocio .cards_efeito {
+        width: 45%;
+        height: 45%;
+    }
+
+    .container_negocio .cards_efeito .card_efeito {
+        width: 45%;
+        height: 50%;
+        margin-bottom: 1%;
+    }
+
+    .container_negocio .cards_efeito .card_efeito .conteudo_efeito h2 {
+        font-size: 15px;
+        height: 80%;
+    }
+
+    .container_modelos .msg_modelos h1 {
+        font-size: 65px;
+    }
+
+    .container_modelos .msg_modelos p {
+        font-size: 18px;
+    }
+
+    .modelos img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .container_modelos .modelos p {
+        font-size: 15px;
+    }
+}
