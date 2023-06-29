@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./src/css/reset.css">
+        <link rel="stylesheet" href="./src/css/header.css">
+        <link rel="stylesheet" href="./src/css/all.css">
+        <link rel="stylesheet" href="./src/css/consultas.css">
+        <script src="./src/js/all.js" defer></script>
+        <script src="./src/js/dropdown.js" defer></script>
+        <title>Cirurgias</title>
+    </head>
+    
+    <body>
+        <header id="topo" class="header">
+            <div class="logo">
+                <img src="./src/images/Logo.png" alt="logo dr. consulta">
+            </div>
+    
+            <nav class="navbar">
+                <input type="checkbox" id="checkbox" class="checkbox" />
+                <label for="checkbox" class="label-menu">Menu<span class="hamburguer"></span></label>
+                <ul class="navbar_menu">
+                    <li class="navbar_item"><a href="#">Sobre a empresa</a></li>
+                    <li class="navbar_item"><a href="#">Convênios e Parcerias</a></li>
+                    <li class="navbar_item"><a href="#" class="dropdown">Consultas e Procedimentos</a>
+                        <div class="submenu">
+                            <div class="submenu_item">
+                                <p><i class="fa-solid fa-stethoscope"></i></p>
+                                <a href="consultas.html">Consultas</a>
+                            </div>
+                            <div class="submenu_item">
+                                <p><i class="fa-solid fa-tooth"></i></p>
+                                <a href="odontologia.html">Odontologia</a>
+                            </div>
+                            <div class="submenu_item">
+                                <p><i class="fa-solid fa-flask-vial"></i></p>
+                                <a href="exames.html">Exames</a>
+                            </div>
+                            <div class="submenu_item">
+                                <p><i class="fa-solid fa-bed-pulse"></i></p>
+                                <a href="cirurgias.html">Cirurgias</a>
+                            </div>
+                            <div class="submenu_item">
+                                <p><i class="fa-solid fa-spa"></i></p>
+                                <a href="estetica.html">Estética</a>
+                            </div>
+                        </div>
+                        </div>
+                    </li>
+                    <li class="navbar_item"><a href="#">Unidades</a></li>
+                    <li class="navbar_item"><a href="franqueado.html">Seja um Franqueado</a></li>
+                    <li class="navbar_item"><a href="#">Contatos</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="container-consultas">
+            <div class="banner-consultas">
+                <img src="./src/images/banner-consultas.png" alt="Banner consultas">
+            </div>
+            <div class="busca-area">
+                <h2>Principais procedimentos cirúrgicos</h2>
+                <div class="search-box">
+                    <input type="text" class="search-txt" placeholder="Buscar área de atuação...">
+                    <a href="#" class="search-button">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="especialidades">
+                <div class="card">
+                    <img src="./src/images/lesao-cutanea.jpg" alt="lesão cutanea drconsultas">
+                    <h3>Ressecção de lesões cutâneas</h3>
+                    <a href="#">saiba mais</a>
+                </div>
+                <div class="card">
+                    <img src="./src/images/tumores-de-pele.png" alt="Ressecção de tumores de pele drconsultas">
+                    <h3>Ressecção de tumores de pele</h3>
+                    <a href="#">saiba mais</a>
+                </div>
+                <div class="card">
+                    <img src="./src/images/eletrocoagulação.jpg" alt="Eletrocoagulação drconsultas">
+                    <h3>Eletrocoagulação de verrugas</h3>
+                    <a href="#">saiba mais</a>
+                </div>
+                <div class="card">
+                    <img src="./src/images/vasectomia.avif" alt="Vasectomia drconsultas">
+                    <h3>Vasectomia</h3>
+                    <a href="#">saiba mais</a>
+                </div>
+            </div>
+        </div>
+    
+    </body>
+    
+    </html>

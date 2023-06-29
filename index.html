@@ -12,6 +12,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
     <link rel="stylesheet" href="./src/css/reset.css">
     <link rel="stylesheet" href="./src/css/header.css">
     <link rel="stylesheet" href="./src/css/slider.css">
@@ -39,23 +43,23 @@
                         <div class="submenu_itens">
                             <div class="submenu_item">
                                 <p><i class="fa-solid fa-stethoscope"></i></p>
-                                <h4>Consultas</h4>
+                                <a href="consultas.html">Consultas</a>
                             </div>
                             <div class="submenu_item">
                                 <p><i class="fa-solid fa-tooth"></i></p>
-                                <h4>Odontologia</h4>
+                                <a href="odontologia.html">Odontologia</a>
                             </div>
                             <div class="submenu_item">
                                 <p><i class="fa-solid fa-flask-vial"></i></p>
-                                <h4>Exames</h4>
+                                <a href="exames.html">Exames</a>
                             </div>
                             <div class="submenu_item">
                                 <p><i class="fa-solid fa-bed-pulse"></i></p>
-                                <h4>Cirurgias</h4>
+                                <a href="cirurgias.html">Cirurgias</a>
                             </div>
                             <div class="submenu_item">
                                 <p><i class="fa-solid fa-spa"></i></p>
-                                <h4>Estética</h4>
+                                <a href="estetica.html">Estética</a>
                             </div>
                         </div>
                     </div>
@@ -65,33 +69,53 @@
                 <li class="navbar_item"><a href="#">Contatos</a></li>
             </ul>
         </nav>
-
-        <!-- <nav>
-            <ul>
-                <a href="#sobre">
-                    <li>Sobre a empresa</li>
-                </a>
-                <a href="#convenios_parcerias">
-                    <li>Convênios e Parcerias</li>
-                </a>
-                <a href="#consultas">
-                    <li>Consultas e Procedimentos</li>
-                </a>
-                <a href="#unidade">
-                    <li>Unidades</li>
-                </a>
-                <a href="franqueado.html">
-                    <li>Seja um Franqueado</li>
-                </a>
-                <a href="#contatos">
-                    <li>Contatos</li>
-                </a>
-
-                </a>
-            </ul>
-        </nav> -->
-
     </header>
+    <div class="banner">
+        <img src="./src/images/banner-index.png" alt="Banner Dr Consulta cartao">
+    </div>
+    <div class="busca">
+        <p class="icon"><span><i class="fa-solid fa-heart"></i></span>
+            Encontre a clínica mais próxima:</p>
+        <form class="select">
+            <select id="estado" name="estado">
+                <option value="Seu Estado"disabled selected>Selecione seu estado</option>
+                <option value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                <option value="AP">Amapá</option>
+                <option value="AM">Amazonas</option>
+                <option value="BA">Bahia</option>
+                <option value="CE">Ceará</option>
+                <option value="DF">Distrito Federal</option>
+                <option value="ES">Espírito Santo</option>
+                <option value="GO">Goiás</option>
+                <option value="MA">Maranhão</option>
+                <option value="MT">Mato Grosso</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="PA">Pará</option>
+                <option value="PB">Paraíba</option>
+                <option value="PR">Paraná</option>
+                <option value="PE">Pernambuco</option>
+                <option value="PI">Piauí</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="RO">Rondônia</option>
+                <option value="RR">Roraima</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="SP">São Paulo</option>
+                <option value="SE">Sergipe</option>
+                <option value="TO">Tocantins</option>
+                <option value="EX">Estrangeiro</option>
+            </select>
+        </form>
+        <p>e/ou</p>
+        <input type="text" name="cidade" id="cidade" placeholder="Digite sua Cidade">
+        <div class="button">
+            <p><i class="fa-solid fa-arrow-right"></i></p>
+            <button type="submit">Buscar</button>
+        </div>
+    </div>
     <div class="container_slider">
         <a class="btn_fixed" href="#top">
             <img src="./src/images/seta cima.png">
@@ -103,12 +127,29 @@
             <input type="radio" name="slider" id="item-4">
             <div class="imagens">
                 <label class="imagem" for="item-1" id="imagem-1">
-                    <img src="./src/images/1.jpg" alt="">
+                    <div class="msg-slider1">
+                        <h2>Junho Vermelho</h2>
+                        <p>Quando você estende a mão, a vida pulda. Doe sangue. Vá hoje mesmo ao banco de sangue mais
+                            próximo.</p>
+                    </div>
+                    <img src="./src/images/junho-vermelho.png" alt="">
                 </label>
                 <label class="imagem" for="item-2" id="imagem-2">
+                    <div class="msg-slider2">
+                        <h2>Tecnologia em prol da saúde</h2>
+                        <p> A tecnologia desempenha um papel fundamental no avanço e na melhoria da área da saúde. Ela
+                            tem o potencial de transformar os cuidados médicos, tornando-os mais eficientes, acessíveis
+                            e personalizados.</p>
+                    </div>
                     <img src="./src/images/2.jpg" alt="">
                 </label>
                 <label class="imagem" for="item-3" id="imagem-3">
+                    <div class="msg-slider3">
+                        <h2>Atendimento Humanizado</h2>
+                        <p> O atendimento humanizado tem se tornado cada vez mais importante para as empresas, pois
+                            ajuda a construir relacionamentos mais sólidos e duradouros com os clientes, proporcionando
+                            uma experiência positiva e personalizada.</p>
+                    </div>
                     <img src="./src/images/3.jpg" alt="">
                 </label>
             </div>
@@ -162,7 +203,11 @@
         });
     </script> -->
     <script src="./src/js/botao.js"></script>
-
+    <script>
+        $(document).ready(function () {
+            $('#estado').select2();
+        });
+    </script>
 </body>
 
 </html>
