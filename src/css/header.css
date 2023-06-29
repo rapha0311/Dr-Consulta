@@ -178,14 +178,19 @@
 }
 
 .submenu_item:hover p,
-.submenu_item:hover h4 {
+.submenu_item:hover  {
     color: chocolate;
     transform: scale(1.08);
 }
 
-.submenu_item h4 {
+.submenu_item a {
     font-weight: 400;
     transition: 0.3s;
+}
+
+.submenu_item a::before {
+    content: "";
+    display: none;
 }
 
 .submenu_item p {
@@ -195,7 +200,7 @@
     transition: 0.3s;
 }
 
-nav ul a:before {
+.navbar_item a:before {
     content: "";
     position: absolute;
     width: 100%;
@@ -214,4 +219,77 @@ a:hover:before {
     visibility: visible;
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
+}
+
+.banner {
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: 90%;
+}
+
+.banner img {
+    width: 90%;
+    height: 100%;
+}
+
+.busca {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 30px;
+    padding: 15px;
+    min-height: 80px;
+}
+
+.busca .icon span {
+    color: red;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: #ffffff;
+    height: 40px;
+    width: 9%;
+    color: #74abb3;
+    border: 2px solid #74abb3;
+    border-radius: 40px;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #74abb3;
+    color: #ffffff;
+}
+
+.button button {
+    border: none;
+    background-color: #ffffff;
+    color: #74abb3;
+    font-weight: bold;
+    transition: 0.4s;
+    width: 50%;
+    height: 100%;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.button button:hover {
+    background-color: #74abb3;
+    color: #ffffff;
+}
+
+input {
+    height: 28px;
+    border-radius: 5px;
+    border: 0.2px solid rgba(0, 0, 0, 0.5);
+    padding: 5px;
+    font-size: 15px;
+}
+
+.select select {
+    font-size: 10px;
 }

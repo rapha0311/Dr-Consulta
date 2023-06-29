@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
 .container_slider {
     display: flex;
     align-items: center;
@@ -11,17 +13,97 @@
     background-size: cover;
     transition: background 0.4s ease-in;
     position: relative;
+    background-color: #ebebeb;
+    font-family: 'Poppins', sans-serif;
 }
 
 .imagens .imagem {
     position: absolute;
-    width: 60%;
-    height: 100%;
+    width: 90%;
+    height: 70%;
     left: 0;
     right: 0;
     margin: auto;
     cursor: pointer;
     transition: transform 0.8s ease;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.imagem .msg-slider1 {
+    padding: 15px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    background-color: var(--color-light-50);
+}
+
+.imagem .msg-slider1 h2 {
+    font-size: 25px;
+    font-weight: bold;
+    color: #cc1100;
+    text-transform: uppercase;
+}
+
+.imagem .msg-slider1 p {
+    color: #505050;
+    font-weight: 500;
+    line-height: 21px;
+    text-align: left;
+}
+
+.imagem .msg-slider2 {
+    padding: 15px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    background-color: var(--color-light-50);
+}
+
+.imagem .msg-slider2 h2 {
+    font-size: 25px;
+    font-weight: bold;
+    color: #2b79a6;
+    text-transform: uppercase;
+}
+
+.imagem .msg-slider2 p {
+    color: #505050;
+    font-weight: 500;
+    line-height: 21px;
+    text-align: left;
+}
+
+.imagem .msg-slider3 {
+    padding: 15px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    background-color: var(--color-light-50);
+}
+
+.imagem .msg-slider3 h2 {
+    font-size: 25px;
+    font-weight: bold;
+    color: #2b79a6;
+    text-transform: uppercase;
+}
+
+.imagem .msg-slider3 p {
+    color: #505050;
+    font-weight: 500;
+    line-height: 21px;
+    text-align: left;
 }
 
 input[type=radio] {
@@ -29,10 +111,11 @@ input[type=radio] {
 }
 
 img {
-    width: 100%;
+    width: 60%;
     height: 100%;
-    border-radius: 10px;
     object-fit: cover;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 .imagens-slider {

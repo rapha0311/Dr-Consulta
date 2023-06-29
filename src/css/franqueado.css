@@ -20,6 +20,8 @@
 
 body {
     background-color: var(--color-light-50);
+    max-width: 1920px;
+    max-height: 1080px;
 }
 
 
@@ -36,7 +38,7 @@ body {
 #form_requisicao {
     position: fixed;
     z-index: 1;
-    margin-left: 70%;
+    margin-left: 71%;
     margin-top: 10%;
     background-color: var(--color-light-50);
     display: flex;
@@ -165,6 +167,7 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    gap: -10px;
 }
 
 .container_invista .bg {
@@ -312,10 +315,11 @@ body {
 }
 
 .container_vantagens .cards_vantagens {
-    width: 70%;
+    width: 40%;
     display: flex;
     flex-wrap: wrap;
-    height: 80%;
+    height: 70%;
+    gap: 10px;
     margin-left: -28%;
     margin-bottom: -30%;
     align-items: center;
@@ -324,8 +328,8 @@ body {
 }
 
 .container_vantagens .cards_vantagens .card {
-    width: 36%;
-    height: 45%;
+    width: 48%;
+    height: 50%;
     position: relative;
     display: flex;
     justify-content: center;
@@ -424,12 +428,13 @@ body {
 }
 
 .container_negocio .cards_efeito {
-    width: 70%;
+    width: 40%;
     display: flex;
     flex-wrap: wrap;
-    height: 80%;
+    height: 70%;
     margin-top: 0;
     margin-left: -28%;
+    gap: 10px;
     align-items: center;
     justify-content: space-around;
     position: relative;
@@ -457,7 +462,7 @@ body {
 .container_negocio .msg h1 {
     margin-top: 0;
     margin-left: -12%;
-    font-size: 65px;
+    font-size: 55px;
     text-transform: uppercase;
     font-weight: bold;
     color: #1d240b;
@@ -465,8 +470,8 @@ body {
 }
 
 .container_negocio .cards_efeito .card_efeito {
-    width: 36%;
-    height: 45%;
+    width: 48%;
+    height: 50%;
     position: relative;
     display: flex;
     justify-content: center;
@@ -551,7 +556,6 @@ body {
 
 .bg_modelos {
     background: url(../images/fundo-empresario.avif);
-    background-color: #035757;
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: contain;
@@ -610,6 +614,7 @@ body {
     font-weight: 400;
     margin-left: -9%;
     margin-bottom: 5%;
+    margin-top: -1%;
     height: 15%;
     width: 75%;
     text-align: center;
@@ -625,14 +630,15 @@ body {
     font-size: 22px;
     width: 75%;
     margin-left: -8%;
+    margin-top: -3%;
     text-align: center;
     margin-bottom: 10%;
     text-shadow: 0 0 0.2em #1a8383;
 }
 
 .modelos img {
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
     border-radius: 10px;
     box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.336);
     transition: 0.3s;
@@ -647,9 +653,9 @@ body {
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-    width: 40%;
+    width: 68%;
     height: 50%;
-    margin-left: -50%;
+    margin-left: -30%;
     gap: 35px;
     margin-bottom: 5%;
     position: relative;
@@ -658,7 +664,40 @@ body {
 .container_modelos .modelos {
     display: flex;
     align-items: center;
+    width: 100%;
     gap: 25px;
+}
+
+.container_modelos .modelos .cx_msg {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 90%;
+}
+
+.container_modelos .modelos .cx_msg .slim {
+    font-weight: bold;
+    color: #cd7f32;
+    text-shadow: 0 0 0.2em #bf8970;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+.container_modelos .modelos .cx_msg .expansao {
+    font-weight: bold;
+    color: #7a8386;
+    text-shadow: 0 0 0.2em #c0c0c0;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+.container_modelos .modelos .cx_msg .premium {
+    font-weight: bold;
+    color: #ffd700;
+    text-shadow: 0 0 0.2em #bf930d;
+    font-size: 25px;
+    text-transform: uppercase;
 }
 
 .container_modelos .modelos p {
@@ -666,6 +705,8 @@ body {
     font-size: 22px;
     width: 75%;
     text-align: center;
+    text-shadow: 0 0 0.2em #a7a7a7;
+    line-height: 28px;
 }
 
 .container_cartao {
@@ -706,7 +747,7 @@ body {
     font-weight: 500;
     color: var(--color-light-50);
     text-shadow: 0 0 0.2em #000000;
-    line-height: 55px;
+    line-height: 48px;
 }
 
 .seja_franqueado {
@@ -780,7 +821,7 @@ body {
     z-index: -1;
 }
 
-.container_suporte .bg_suporte::after {
+/* .container_suporte .bg_suporte::after {
     left: -105px;
     transform: rotate(-45deg);
 }
@@ -798,7 +839,7 @@ body {
     height: 150px;
     top: -74px;
     background-color: #FFF;
-}
+} */
 
 .container_suporte .titulo_suporte {
     display: flex;
@@ -811,7 +852,7 @@ body {
 }
 
 .container_suporte .titulo_suporte h1 {
-    font-size: 80px;
+    font-size: 60px;
     font-weight: bold;
     color: #42f082;
     text-shadow: 0 0 0.2em #2f2c2c;
@@ -828,15 +869,15 @@ body {
 .container_suporte .cards_suporte {
     display: flex;
     flex-wrap: wrap;
-    width: 70%;
+    width: 50%;
     height: 90vh;
     margin-top: 2%;
     margin-left: -15%;
 }
 
 .container_suporte .cards_suporte .card {
-    width: 330px;
-    min-height: 195px;
+    width: 40%;
+    max-height: 195px;
     display: flex;
     align-items: center;
     justify-content: start;
@@ -851,25 +892,30 @@ body {
     background-color: #93bfb5;
     border-radius: 50%;
     padding: 10px;
-    width: 66px;
-    height: 70px;
+    width: 30%;
+    height: 30%;
     display: flex;
     align-items: center;
     justify-content: center;
     box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.336);
 }
 
+.cards_suporte .card .icone img {
+    width: 100%;
+    height: 100%;
+}
+
 .cards_suporte .card h2 {
     color: #9caa2c;
-    font-size: 30px;
+    font-size: 20px;
     font-weight: bold;
-    line-height: 35px;
+    line-height: 25px;
     margin-top: 2%;
 }
 
 .cards_suporte .card h3 {
     color: var(--color-light-50);
-    font-size: 22px;
+    font-size: 15px;
     font-weight: 300;
     width: 100%;
     line-height: 25px;
